@@ -14,6 +14,7 @@
 		9C81FCD32575826D000A023E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C81FCD12575826D000A023E /* Main.storyboard */; };
 		9C81FCD52575826E000A023E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C81FCD42575826E000A023E /* Assets.xcassets */; };
 		9C81FCD82575826E000A023E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C81FCD62575826E000A023E /* LaunchScreen.storyboard */; };
+		9C81FCE2257593DA000A023E /* MathCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C81FCE1257593DA000A023E /* MathCalculation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9C81FCD42575826E000A023E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C81FCD72575826E000A023E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C81FCD92575826E000A023E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C81FCE1257593DA000A023E /* MathCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathCalculation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				9C81FCBC2575806A000A023E /* MAKTestPod.h */,
+				9C81FCE1257593DA000A023E /* MathCalculation.swift */,
 				9C81FCBD2575806A000A023E /* Info.plist */,
 			);
 			path = MAKTestPod;
@@ -149,6 +152,7 @@
 				TargetAttributes = {
 					9C81FCB82575806A000A023E = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					9C81FCC82575826D000A023E = {
 						CreatedOnToolsVersion = 12.2;
@@ -199,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C81FCE2257593DA000A023E /* MathCalculation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +364,7 @@
 		9C81FCC22575806A000A023E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -374,6 +380,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.afnan.maktestpod.MAKTestPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -382,6 +389,7 @@
 		9C81FCC32575806A000A023E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
