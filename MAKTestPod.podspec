@@ -67,7 +67,7 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-   spec.ios.deployment_target = "13.3"
+   spec.ios.deployment_target = "14.2"
     spec.swift_version = "5.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
